@@ -34,4 +34,4 @@ variable "database_cidr_block" {
 
 variable "is_peering_connection" {
   default = false
-}
+ }
