@@ -5,7 +5,7 @@ module "mysql" {
   ami = data.aws_ami.expense.id
   instance_type          = "t2.micro"
   vpc_security_group_ids = [local.mysql_sg_id]
-  subnet_id              = local.private_subnet_id
+  subnet_id              = local.database_subnet_id
   associate_public_ip_address = false
   tags = merge (
     var.common_tags,
